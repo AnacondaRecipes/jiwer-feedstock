@@ -10,17 +10,16 @@ source:
   sha256: 4bfa525c4d5195cd413be4a2b148b7db043dec8c09a5692509504745fc7a0bc6
 
 build:
-  noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
 
 requirements:
   host:
-    - python >=3.7,<4.0
+    - python
     - pip
     - poetry-core
   run:
-    - python >=3.7,<4.0
+    - python
     - levenshtein ==0.20.2
 
 test:
