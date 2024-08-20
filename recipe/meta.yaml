@@ -32,10 +32,20 @@ test:
     - pip
 
 about:
-  home: https://github.com/jitsi/jiwer
+  home: https://jitsi.github.io/jiwer
   summary: Evaluate your speech-to-text system with similarity measures such as word error rate (WER)
+  description: |
+    JiWER is a simple and fast python package to evaluate an automatic speech recognition system. It supports the following measures:
+      * word error rate (WER)
+      * match error rate (MER)
+      * word information lost (WIL)
+      * word information preserved (WIP)
+      * character error rate (CER)
+  license_family: Apache
   license: Apache-2.0
   license_file: LICENSE
+  doc_url: https://jitsi.github.io/jiwer
+  dev_url: https://github.com/jitsi/jiwer
 
 extra:
   recipe-maintainers:
