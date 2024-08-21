@@ -8,6 +8,7 @@ package:
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
     sha256: 2438acdc7ca22128fcab4be60db595809d2b5e73785b736de36dc3281a2a6ae8
+  # check for the next version if the tag is correctly spelled (e.g. v3.0.5) and update it.
   - url: https://github.com/jitsi/{{ name }}/archive/refs/tags/v3.04.tar.gz
     sha256: d45fccc196468bc64308f517097ba8a49d833581178f5c9ceadbce8518256568
     folder: upstream_tests
