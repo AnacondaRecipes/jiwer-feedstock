@@ -37,6 +37,7 @@ test:
     - jiwer
   commands:
     - pip check
+    - jiwer --help
     - pytest -v upstream_tests/tests
   requires:
     - pip
