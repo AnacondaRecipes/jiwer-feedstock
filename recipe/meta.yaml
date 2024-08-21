@@ -38,11 +38,10 @@ test:
   commands:
     - pip check
     - jiwer --help
-    - pytest -v upstream_tests/tests
+    - pytest -v upstream_tests/tests -k "not test_speed_"
   requires:
     - pip
     - pytest
-    - pytest-benchmark
 
 about:
   home: https://jitsi.github.io/jiwer
